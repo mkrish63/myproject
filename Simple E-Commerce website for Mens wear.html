@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colorful Shop</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      color: #333;
+    }
+
+    header {
+      background-color: #ff6f61;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 0 0 10px 10px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 70px;
+      height: 70px;
+    }
+
+    .logo h1 {
+      font-size: 1.4rem;
+      color: white;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .products {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .products h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #222;
+      margin-bottom: 30px;
+    }
+
+    .product-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      text-align: left;
+      font-size: 1.1rem;
+      color: #111;
+      margin-bottom: 5px;
+    }
+
+    .product-card p {
+      text-align: left;
+      color: #333;
+      font-size: 1rem;
+    }
+
+    .product-card button {
+      margin-top: 15px;
+      padding: 12px;
+      width: 100%;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .product-card button:hover {
+      background-color: #388e3c;
+    }
+
+    footer {
+      background-color: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+      border-radius: 10px 10px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://assets.onecompiler.app/43grzbryq/43grzccm2/men-s-clothing-store-logo-clothing-store-transparent-background-clothes-shop-logo-men-s-clothing-store-logo-clothing-store-275006378.webp" alt="Logo" />
+      <h1>Mens Wears</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="products">
+      <h2>Products</h2>
+
+      <div class="product-wrapper">
+        <div class="product-card">
+          <img src="https://assets.onecompiler.app/43grzbryq/43mx3nk74/5579BGREEN_1_M.webp" alt="Formal shirts">
+          <h3>Formal shirts</h3>
+          <p>$499</p>
+          <button>Add to Cart</button>
+          <button>Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-wrapper">
+        <div class="product-card">
+          <img src="https://assets.onecompiler.app/43grzbryq/43grzccm2/BushirtDenimShirt-1_eff620de-e5cf-471f-a066-54d6a193f57c_1800x1800.webp" alt="Denim Jacket">
+          <h3>Denim Jacket</h3>
+          <p>$899</p>
+          <button>Add to Cart</button>
+           <button>Buy Now</button>
+        </div>
+      </div>
+      
+      <div class="product-wrapper">
+        <div class="product-card">
+          <img src="https://assets.onecompiler.app/43grzbryq/43grzccm2/133close2_800x.webp" alt="T-shirt">
+          <h3>T-shirt</h3>
+          <p>$59.99</p>
+          <button>Add to Cart</button>
+           <button>Buy Now</button>
+        </div>
+      </div>
+      
+      <div class="product-wrapper">
+        <div class="product-card">
+          <img src="https://assets.onecompiler.app/43grzbryq/43grzccm2/WhatsAppImage2024-01-23at5.55.43PM.webp" alt="Causal shirt">
+          <h3>Causal shirt</h3>
+          <p>$599.99</p>
+          <button>Add to Cart</button>
+           <button>Buy Now</button>
+        </div>
+      </div>
+      
+      <div class="product-wrapper">
+        <div class="product-card">
+          <img src="https://assets.onecompiler.app/43grzbryq/43grzccm2/7aa4dca7-b49b-4c1e-868e-4553f6a82ecb_26150662-originnm80prcnt.jpg" alt="jeans">
+          <h3>Jeans</h3>
+          <p>$849.99</p>
+          <button>Add to Cart</button>
+           <button>Buy Now</button>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Colorful Shop. All rights reserved.</p>
+  </footer>
+</body>
+</html>
