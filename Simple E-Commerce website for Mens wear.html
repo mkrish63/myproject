@@ -67,17 +67,18 @@
       margin-bottom: 30px;
     }
 
-    .product-wrapper {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 30px;
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      justify-items: center;
     }
 
     .product-card {
       background-color: white;
       border-radius: 12px;
       padding: 20px;
-      width: 300px;
+      width: 280px;
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
@@ -128,6 +129,13 @@
       margin-top: 40px;
       border-radius: 10px 10px 0 0;
     }
+
+    /* Optional: Stack items on small screens */
+    @media (max-width: 650px) {
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
@@ -149,7 +157,7 @@
     <section class="products">
       <h2>Products</h2>
 
-      <div class="product-wrapper">
+      <div class="product-grid">
         <div class="product-card">
           <img src="https://assets.onecompiler.app/43grzbryq/43mx3nk74/5579BGREEN_1_M.webp" alt="Formal shirts">
           <h3>Formal shirts</h3>
@@ -157,48 +165,31 @@
           <button>Add to Cart</button>
           <button>Buy Now</button>
         </div>
-      </div>
 
-      <div class="product-wrapper">
         <div class="product-card">
           <img src="https://assets.onecompiler.app/43grzbryq/43grzccm2/BushirtDenimShirt-1_eff620de-e5cf-471f-a066-54d6a193f57c_1800x1800.webp" alt="Denim Jacket">
           <h3>Denim Jacket</h3>
           <p>$899</p>
           <button>Add to Cart</button>
-           <button>Buy Now</button>
+          <button>Buy Now</button>
         </div>
-      </div>
-      
-      <div class="product-wrapper">
+
         <div class="product-card">
           <img src="https://assets.onecompiler.app/43grzbryq/43grzccm2/133close2_800x.webp" alt="T-shirt">
           <h3>T-shirt</h3>
-          <p>$59.99</p>
+          <p>$399.99</p>
           <button>Add to Cart</button>
-           <button>Buy Now</button>
+          <button>Buy Now</button>
         </div>
-      </div>
-      
-      <div class="product-wrapper">
+
         <div class="product-card">
           <img src="https://assets.onecompiler.app/43grzbryq/43grzccm2/WhatsAppImage2024-01-23at5.55.43PM.webp" alt="Causal shirt">
           <h3>Causal shirt</h3>
           <p>$599.99</p>
           <button>Add to Cart</button>
-           <button>Buy Now</button>
+          <button>Buy Now</button>
         </div>
       </div>
-      
-      <div class="product-wrapper">
-        <div class="product-card">
-          <img src="https://assets.onecompiler.app/43grzbryq/43grzccm2/7aa4dca7-b49b-4c1e-868e-4553f6a82ecb_26150662-originnm80prcnt.jpg" alt="jeans">
-          <h3>Jeans</h3>
-          <p>$849.99</p>
-          <button>Add to Cart</button>
-           <button>Buy Now</button>
-        </div>
-      </div>
-      
     </section>
   </main>
 
